@@ -1,0 +1,4 @@
+.accordion-button:focus {
+  z-index: 0;
+  box-shadow: none;
+}
