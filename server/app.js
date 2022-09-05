@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 
 var dotenv = require('dotenv');
 dotenv.config();
-mongoose.connect(process.env.DB);
+mongoose.connect('mongodb+srv://ladka6:150415egE@cluster0.huvrnt3.mongodb.net/denemedb');
 var app = express();
 
 // view engine setup
