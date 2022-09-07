@@ -3,6 +3,7 @@ import Map from "./Map";
 import Navbar from "./Navbar";
 import AccordionData from "./AccordionData";
 import Neighboor from "./Neighboor";
+import BarChart from "./BarChart";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         </div>
         <div className="d-flex bd-highlight flex-column my-5">
           {renderNeighboor()}
+
         </div>
       </div>
     </div>

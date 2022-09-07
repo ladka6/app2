@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import BarChart from './BarChart';
 const Neighboor = ({ cityName, dist, neighboor, neighboorName }) => {
   const [toplamArz, setToplamArz] = useState(0);
   const [toplamKullanim, setToplamKullanim] = useState(0);
@@ -24,7 +24,7 @@ const Neighboor = ({ cityName, dist, neighboor, neighboorName }) => {
       <div className='text-center'>
         <h1 className='text-uppercase'>{cityName}-{dist}-{neighboorName}</h1>
       </div>
-      <table class="table shadow mt-4">
+      <table clasName="table shadow mt-4">
         <thead>
           <tr>
             <th scope="col">Toplam Arz</th>
@@ -42,6 +42,10 @@ const Neighboor = ({ cityName, dist, neighboor, neighboorName }) => {
           </tr>
         </tbody>
       </table>
+
+      <div style={{ width: '1000px' }}>
+        <BarChart toplamArz={toplamArz} toplamKullanim={toplamKullanim} kayip={kayip} kacak={kacak} />
+      </div>
     </React.Fragment>
   );
 };
