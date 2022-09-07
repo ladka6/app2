@@ -5,8 +5,7 @@
 /server/package-lock.json
 /client/node_modules
 /client/package-lock.json
-/server/bin
-/server/.env
+
 
 /.pnp
 .pnp.js
